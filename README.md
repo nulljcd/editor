@@ -1,2 +1,2 @@
 # editor
-A simple html, css, js editor.
+A simple html, css and js editor.
