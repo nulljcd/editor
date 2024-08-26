@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="nav">
+    <div id="runBtn">run</div>
+  </div>
+  <div id="main">
+    <div id="editor">
+      <div id="editorNav">
+        <div class="navEditorBtn selectedEditor" id="htmlEditorBtn">html</div><div class="navEditorBtn" id="cssEditorBtn">css</div><div class="navEditorBtn" id="jsEditorBtn">js</div>
+      </div>
+      <pre id="htmlEditor"></pre>
+      <pre id="cssEditor" hidden></pre>
+      <pre id="jsEditor" hidden></pre>
+    </div>
+    <div id="outputWindow"></div>
+  </div>
+  <script src="ace/ace.js"></script>
+  <script src="ace/ext-language_tools.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

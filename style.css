@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background-color: #282c34;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  font-size: 14px;
+  color: white;
+  font-family: Menlo, Monaco, 'Courier New', monospace;
+}
+
+#main {
+  height: calc(100% - 30px);
+  display: flex;
+}
+
+#nav {
+  background-color: #282c34;
+  height: 30px;
+  width: 100%;
+}
+
+#runBtn {
+  display: block;
+  height: calc(100% - 10px);
+  float: left;
+  margin: 5px;
+  text-align: center;
+  line-height: 1.3;
+  width: 60px;
+  border-radius: 2px;
+  background-color: #66b2f0;
+  cursor: pointer;
+}
+
+#editorNav {
+  background-color: #1d1f25;
+  height: 25px;
+}
+
+.navEditorBtn {
+  display: inline-block;
+  height: calc(100% - 1px);
+  font-size: 13px;
+  border-top: 1px solid #00000000;
+  width: 100px;
+  line-height: 1.7;
+  text-align: center;
+  cursor: pointer;
+}
+
+.selectedEditor {
+  border-top: 1px solid #66b2f0;
+  background-color: #282c34;
+}
+
+#editor {
+  width: 35%;
+  min-width: 300px;
+  max-width: calc(100% - 300px);
+  resize: horizontal;
+  overflow: hidden;
+}
+
+.ace_editor {
+  width: 100%;
+  height: calc(100% - 25px);
+  margin: 0;
+}
+
+#outputWindow {
+  flex: 1;
+  border-top: 2px solid #575757;
+  border-left: 2px solid #575757;
+}
+
+#output {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: white;
+}
